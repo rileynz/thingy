@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111a">
+  <title>Riley's Connected Device Registry</title>
+  <meta name="description" content="Identity registry for Riley Bylsma's connected Thingy:91 cellular IoT devices.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Riley's Connected Device Registry home">
+        <span class="brand-mark"><span class="brand-dot"></span></span>
+        <span class="brand-text">Connected Device Registry</span>
+      </a>
+      <span class="top-chip">Private project lab · 2 registered units</span>
+    </header>
+
+    <section class="home-hero">
+      <p class="micro-label">Riley Bylsma · Device Registry</p>
+      <h1>Connected.<br>Identified.</h1>
+      <p class="hero-copy">A small registry for the cellular IoT devices in <strong>Riley's personal wireless and technology lab.</strong> Each physical Thingy:91 has its own NFC identity page so it can be recognised instantly with a phone tap.</p>
+    </section>
+
+    <div class="registry-summary" aria-label="Registry summary">
+      <span class="summary-pill"><b>2</b> Thingy:91 units</span>
+      <span class="summary-pill"><b>LTE-M</b> cellular IoT</span>
+      <span class="summary-pill"><b>GNSS</b> positioning</span>
+      <span class="summary-pill"><b>NFC</b> identity tap</span>
+    </div>
+
+    <section class="registry-grid" id="device-grid" aria-label="Registered devices"></section>
+
+    <footer>Personal IoT device registry · NFC pages identify the physical unit · No sensitive account data is stored on this website.</footer>
+  </main>
+  <script src="/assets/config.js"></script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

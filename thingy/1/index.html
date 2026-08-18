@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111a">
+  <title>Thingy 1 · Property of Riley</title>
+  <meta name="description" content="Ownership and identity page for Thingy 1, a Nordic Thingy:91 cellular IoT device belonging to Riley Bylsma.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-device="1">
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark"><span class="brand-dot"></span></span>
+        <span class="brand-text">Connected Device Registry</span>
+      </a>
+      <span class="top-chip">NFC verified identity</span>
+    </header>
+
+    <a class="back" href="/">← Device registry</a>
+
+    <section class="identity-wrap">
+      <article class="identity-card">
+        <div class="identity-copy">
+          <div class="owner-line">Property of <span id="owner-name">Riley Bylsma</span></div>
+          <p class="micro-label" id="device-registry-name">Registered device</p>
+          <h1 id="device-name">Thingy 1</h1>
+          <p class="identity-sub"><strong id="device-subtitle">Cellular IoT device</strong><br>This is a Nordic Thingy:91 used in Riley's personal wireless and IoT project lab for learning, testing and real-world connected-device experiments.</p>
+        </div>
+        <div class="identity-bottom">
+          <span class="info-chip">Nordic Thingy:91</span>
+          <span class="info-chip">LTE-M / NB-IoT</span>
+          <span class="info-chip">GNSS</span>
+          <span class="info-chip">Sensors</span>
+          <span class="info-chip">NFC identity</span>
+        </div>
+      </article>
+
+      <aside class="glass-card device-badge-card" aria-label="Device identity badge">
+        <div class="badge-top">
+          <div class="big-device-number" id="device-number">01</div>
+          <div class="badge-label">Registered unit</div>
+        </div>
+        <div class="badge-role">
+          <strong id="device-role">IoT test unit</strong>
+          <span id="device-purpose">Wireless and tracking experiments.</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section two-col">
+      <article class="glass-card found-card">
+        <div class="found-icon" aria-hidden="true">✓</div>
+        <p class="card-kicker">If you found this device</p>
+        <h2>This Thingy belongs to Riley.</h2>
+        <p class="body-copy">Please keep it safe and return it to <strong>Riley Bylsma</strong> if possible. This unit is part of a personal technology and cellular IoT project and may contain active tracking or sensor experiments.</p>
+        <div class="found-callout">The NFC page you are viewing is the device's digital identity tag. It is designed to identify the physical unit without exposing private account credentials or access keys.</div>
+      </article>
+
+      <article class="glass-card">
+        <div class="card-title">
+          <div>
+            <p class="card-kicker">What is this?</p>
+            <h2>A tiny cellular IoT lab.</h2>
+          </div>
+        </div>
+        <p class="body-copy">The <strong>Nordic Thingy:91</strong> is a compact development device built around cellular IoT hardware. It can combine mobile-network connectivity, satellite positioning and onboard sensors in one portable unit. Riley uses these devices to explore how real connected systems behave outside a classroom or simulator.</p>
+      </article>
+    </section>
+
+    <section class="section glass-card">
+      <div class="card-title">
+        <div>
+          <p class="card-kicker">Capabilities</p>
+          <h2>What Riley uses it for</h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature"><div class="feature-icon">RF</div><strong>Cellular testing</strong><span>LTE-M and NB-IoT connectivity experiments.</span></div>
+        <div class="feature"><div class="feature-icon">GN</div><strong>Positioning</strong><span>GNSS-based location and field testing.</span></div>
+        <div class="feature"><div class="feature-icon">S</div><strong>Sensor telemetry</strong><span>Environmental and motion data experiments.</span></div>
+        <div class="feature"><div class="feature-icon">N</div><strong>NFC identity</strong><span>A phone tap opens this exact device page.</span></div>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <article class="glass-card" id="technical">
+        <div class="card-title">
+          <div>
+            <p class="card-kicker">Inside the device</p>
+            <h2>Technical identity</h2>
+          </div>
+        </div>
+        <div class="tech-rows">
+          <div class="tech-row"><span>Model</span><strong>Nordic Thingy:91</strong></div>
+          <div class="tech-row"><span>Cellular / GNSS processor</span><strong>nRF9160</strong></div>
+          <div class="tech-row"><span>Short-range / USB / NFC processor</span><strong>nRF52840</strong></div>
+          <div class="tech-row"><span>Tracking firmware</span><strong>Asset Tracker v2</strong></div>
+          <div class="tech-row"><span>NFC identity</span><span class="tech-tag">HTTPS NDEF</span></div>
+        </div>
+      </article>
+
+      <article class="glass-card">
+        <div class="card-title">
+          <div>
+            <p class="card-kicker">Owner tools</p>
+            <h2>Device shortcuts</h2>
+          </div>
+        </div>
+        <p class="body-copy">These links do not expose the Thingy's private credentials. The nRF Cloud button simply opens the cloud service for the owner to sign in normally.</p>
+        <div class="actions">
+          <a class="btn primary" id="cloud-link" href="https://nrfcloud.com" target="_blank" rel="noopener">Open nRF Cloud</a>
+          <button class="btn" id="copy-btn" type="button">Copy device link</button>
+          <a class="btn" href="/">All registered devices</a>
+          <a class="btn" href="#technical">About this device</a>
+        </div>
+        <div class="url-box" id="nfc-url"></div>
+        <p class="owner-tools-note">The NFC chip stores this web address as the identity payload. The page itself can be redesigned later without changing the NFC firmware or URL.</p>
+      </article>
+    </section>
+
+    <footer><span id="device-name-footer">Thingy 1</span> · Property of Riley Bylsma · Connected Device Registry</footer>
+  </main>
+  <script src="/assets/config.js"></script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
